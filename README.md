@@ -1,3 +1,5 @@
+NAME: JISHNUPRIYAN S
+REFERENCE NUMBER: 23008936
 # Experiment--03-Half-Subtractor-and-Full-subtractor
 ## Implementation-of-Half-subtractor-and-Full-subtractor-circuit
 ## AIM:
