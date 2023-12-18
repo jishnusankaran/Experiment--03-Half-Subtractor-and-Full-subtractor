@@ -33,22 +33,51 @@ Write the detailed procedure here
 
 
 ## Program:
-/*
-Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
-*/
+## Half Subractor:
+```
+module exp4(a,b,borrow,diff);
+input a,b;
+output diff,borrow;
+assign diff=a^b;
+assign borrow=~a&b;
+endmodule
+```
+## Full Subractor:
+```module exp4(a,b,bin,borrow,diff);
+input a,b,bin;
+output diff,borrow;
+assign diff=(a^b)^bin;
+assign borrow=((~a)&&bin)||(b&&bin)||((~a)&&b);
+endmodule
+```
 
-## Output:
+## Truth table:
 
-## Truthtable
-
-
-
-##  RTL realization
+## Half subractor:
+![Screenshot 2023-12-18 130249](https://github.com/jishnusankaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979369/83456981-b6d4-4e71-a0cc-4dcce4ade2c9)
 
 
-## Timing diagram 
+## Full Subractor:
+
+![Screenshot 2023-12-18 130257](https://github.com/jishnusankaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979369/75ef84cd-d80c-49db-8116-abb1dc111393)
+
+## RTL Realisation:
+
+## Half Subractor:
+
+![Screenshot 2023-12-18 130304](https://github.com/jishnusankaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979369/b902488f-eefc-4560-a35b-510dc4e44918)
+
+## Full subractor:
+
+![Screenshot 2023-12-18 130309](https://github.com/jishnusankaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979369/13bbe139-a68d-4afc-8ce8-aa6902110ca6)
+
+## Timing Diagram:
+## Half subractor:
+
+![Screenshot 2023-12-18 130319](https://github.com/jishnusankaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979369/57e394ff-e7a5-44a0-b775-138f20dd378b)
+## Full subractor:
+
+![Screenshot 2023-12-18 130325](https://github.com/jishnusankaran/Experiment--03-Half-Subtractor-and-Full-subtractor/assets/144979369/434df7b9-7c32-46cd-a82c-e434ce153fc7)
 
 ## Result:
 Thus the half subtractor and full subtractor circuits are designed and the truth tables is verified using quartus software.
